@@ -1,0 +1,122 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.round {
+  background-color: blueviolet;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.completed-section-round {
+  background-color: red;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-heading {
+  width: 100%;
+  display: flex;
+  color: white;
+  border-radius: 8px;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1rem;
+  background-color: purple;
+}
+
+.form-wrapper {
+  padding: 0 3rem;
+  background-color: aliceblue;
+}
+
+.form-container {
+  padding: 2rem 5rem;
+  background-color: beige;
+}
+.section-input {
+  display: flex;
+  flex-direction: column;
+  /* gap: 11rem; */
+  gap: 2rem;
+  width: 100%;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.text-field {
+  width: 40%;
+  /* left: 4rem; */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.line{
+  border:1px solid black;
+}
+
+.disabled{
+  background-color: grey;
+}
+
+.makeGreen {
+  background-color: green;
+}
+
+.makeRed {
+  background-color: red;
+}
